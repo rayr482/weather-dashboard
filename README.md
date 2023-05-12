@@ -6,8 +6,8 @@ This application allows users to know what the weather will be for any city for 
 
 ## Screenshot
 
-
+![image](https://github.com/rayr482/weather-dashboard/assets/128929611/04ed9604-2f3f-4315-81b7-039e7da99d20)
 
 ## URL to Deployed Application
 
-
+https://rayr482.github.io/weather-dashboard/
