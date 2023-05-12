@@ -1,0 +1,69 @@
+body {
+    margin: 5px;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    text-align: center;
+    background-color: blueviolet;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.search-city {
+    width: 25%;
+    margin: 10px 20px 0px 10px;
+    padding: 10px;
+    background-color: lavender;
+}
+
+.search-btn {
+    margin-left: 52px;
+}
+
+.city-list-section {
+    margin: 5px;
+}
+
+.city {
+    width: 85%
+}
+
+.results-section {
+    width: 75%;
+    padding: 10px;
+}
+
+.current-conditions {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.name-city {
+    display: flex;
+    align-items: center;
+}
+
+.forecast-section {
+    padding-top: 30px;
+}
+
+.container {
+    display: inline;
+}
+
+.card-header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+.card-body {
+    background-color: lightblue;
+    text-align: center;
+}
