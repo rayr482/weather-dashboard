@@ -5,7 +5,7 @@ var cityListID = $('#city-list');
 
 var getCity = function() {
     var cityInput = uppercaseCity($('#city')[0].value.trim());
-    var apiURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityInput + '&units=imperial&appid=' + apiKey;
+    var apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityInput + '&units=imperial&appid=' + apiKey;
 
     fetch(apiURL)
         .then(function(response) {
@@ -21,7 +21,7 @@ var getCity = function() {
 
                         localStorage.setItem(cityInput, latlon);
 
-                        apiURL = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&exclude=minutely,hourly&units=imperial&appid=' + apiKey;
+                        apiURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&exclude=minutely,hourly&units=imperial&appid=' + apiKey;
                         
                         fetch(apiURL)
                             .then(function(response2) {
@@ -41,7 +41,7 @@ var getCity = function() {
 };
 
 var getCityList = function(location) {
-    apiURL = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + location[0] + '&lon=' + location[1] + '&exclude=minutely,hourly&units=imperial&appid=' + apiKey;
+    apiURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + location[0] + '&lon=' + location[1] + '&exclude=minutely,hourly&units=imperial&appid=' + apiKey;
 
     fetch(apiURL)
         .then(function(response) {
